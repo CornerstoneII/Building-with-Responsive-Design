@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-.container {
+body {
   background: #f0f0f0;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -112,53 +112,57 @@ header {
   color: #808080;
 }
 
-/* Main Section */
-main {
-  margin-top: 104px;
-}
-
+/* Showcase Section */
 .showcase {
   display: grid;
-  grid-template-areas:
-      'myArea1 myArea1 myArea1 myArea1 myArea1 myArea2 myArea2'
-      'myArea1 myArea1 myArea1 myArea1 myArea1 myArea3 myArea3';
-  grid: 10px;
-  padding: 10px;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  height: 500px;
+  padding: 0 10px;
 }
 
-.left-showcase {
-  grid-area: myArea1;
+.right-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.right-showcase-1 {
-  grid-area: myArea2;
+.showcase-1 {
+  background: url(../img/showcase-1.png) no-repeat center center/cover;
 }
 
-.right-showcase-2 {
-  grid-area: myArea3;
+.showcase-2 {
+  height: 250px;
+  background: url(../img/showcase-2.png) no-repeat center center/cover;
 }
 
-.showcase-img1 {
+.showcase-3 {
+  height: 250px;
+  background: url(../img/showcase-3.jpg) no-repeat center center/cover;
+}
+
+
+/* .showcase-img1 {
   overflow: hidden;
   background-size: cover;
   background-position: center;
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/conversation-interview-salary-leader-gq-796x417.png');
   height: 410px;
-  width: 1000px;
-}
+  /* width: 1000px; */
+/* }
 
 .showcase-img2,
 .showcase-img3 {
-  width: 300px;
-  overflow: hidden;
+  /* width: 300px; */
+  /* overflow: hidden;
   background-size: cover;
   background-position: center;
   height: 200px;
   background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/kon-karampelas-12TzzNLc2QM-unsplash-e1594100243463-796x418.jpg');
-}
+} */
 
-.showcase > div {
+/* .showcase > div {
   padding: 20px 0;
-}
+} */
 
-/* Latest News */
+/* Latest News  */
