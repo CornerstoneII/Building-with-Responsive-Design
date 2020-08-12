@@ -5,7 +5,6 @@
 }
 
 body {
-  background: #f0f0f0;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   width: 100%;
@@ -199,7 +198,90 @@ body h3 {
 }
 
 /* Latest News */
-.latest-news-section {
+.latest-news {
+  display: grid;
+  grid-template-areas: 
+  'category-header . . .'
+  'card-1 card-2 card-3 card-4'
+  'card-5 card-6 card-7 card-8';
+  padding: 0 10%;
+  gap: 20px;
+}
+
+.latest-news img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.latest-news p {
+  color: #555;
+  padding-top: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.latest-news h2 {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.category-header {
+  grid-area: category-header;
+  font-size: x-large;
+  font-weight: bolder;
+  align-items: center;
+}
+
+.latest-news .category-header {
+  color: red;
+}
+
+.category-header img {
+  width: 20px;
+  height: 20px;
+}
+
+.card-1 {
+  grid-area: card-1;
+
+}
+
+.card-2 {
+  grid-area: card-2;
+
+}
+
+.card-3 {
+  grid-area: card-3;
+
+}
+
+.card-4 {
+  grid-area: card-4;
+
+}
+
+.card-5 {
+  grid-area: card-5;
+ 
+}
+
+.card-6 {
+  grid-area: card-6;
+ 
+}
+
+.card-7 {
+  grid-area: card-7;
+
+}
+
+.card-8 {
+  grid-area: card-8;
+ 
+}
+/* .latest-news-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
@@ -254,4 +336,4 @@ body h3 {
 .img8 {
   height: 250px;
   background: url(../img/showcase-3.jpg) no-repeat center center/cover;
-}
+} */
