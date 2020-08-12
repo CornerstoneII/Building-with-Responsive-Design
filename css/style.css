@@ -6,6 +6,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; */
 }
 
 ul {
@@ -89,3 +91,54 @@ a {
 .bottom-nav-right i {
   color: gray;
 }
+
+/* Main Section */
+main {
+  margin-top: 104px;
+}
+
+.showcase {
+  display: grid;
+  grid-template-areas:
+      'myArea1 myArea1 myArea1 myArea1 myArea1 myArea2 myArea2'
+      'myArea1 myArea1 myArea1 myArea1 myArea1 myArea3 myArea3';
+  grid: 10px;
+  padding: 10px;
+}
+
+.left-showcase {
+  grid-area: myArea1;
+}
+
+.right-showcase-1 {
+  grid-area: myArea2;
+}
+
+.right-showcase-2 {
+  grid-area: myArea3;
+}
+
+.showcase-img1 {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/conversation-interview-salary-leader-gq-796x417.png');
+  height: 410px;
+  width: 1000px;
+}
+
+.showcase-img2,
+.showcase-img3 {
+  width: 300px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  background-image: url('https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/07/kon-karampelas-12TzzNLc2QM-unsplash-e1594100243463-796x418.jpg');
+}
+
+.showcase > div {
+  padding: 20px 0;
+}
+
+/* Latest News */
