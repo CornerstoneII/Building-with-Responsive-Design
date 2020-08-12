@@ -41,6 +41,7 @@ a {
   height: 30px;
   padding: 0 20px;
   font-size: 14px;
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -59,6 +60,32 @@ a {
 
 .top-nav-right {
   justify-content: space-between;
-  justify-self: end;
+  justify-self: flex-end;
   width: 40%;
+  margin-right: 60px;
+}
+
+.bottom-nav {
+  grid-template-columns: 7fr 1fr ;
+  align-items: center;
+  background: #fff;
+  height: 50px;
+  padding-left: 20px;
+}
+
+.bottom-nav a {
+  color: #555;
+}
+
+.bottom-nav-left {
+  justify-content: space-between;
+  width: 50%;
+}
+
+.bottom-nav-right a {
+  align-self: end;
+}
+
+.bottom-nav-right i {
+  color: gray;
 }
