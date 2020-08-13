@@ -75,7 +75,6 @@ header {
   justify-content: space-between;
   justify-self: flex-end;
   width: 40%;
-  margin-right: 60px;
 }
 
 .bottom-nav {
@@ -133,7 +132,7 @@ header {
 .showcase-1 {
   background: url(../img/showcase-1.png) no-repeat center center/cover;
   flex-direction: column;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .showcase-2 {
@@ -234,7 +233,7 @@ body h3 {
 }
 
 .latest-news .category-header {
-  color: red;
+  color: #f42;
 }
 
 .category-header img {
@@ -278,9 +277,8 @@ body h3 {
 .funding-section {
   padding: 0 10%;
   color: black;
-  margin-top: 70px;
+  margin: 70px 0;
   position: relative;
-  margin-bottom: 150px;
 }
 
 .funding-header-section {
@@ -312,7 +310,7 @@ body h3 {
 }
 
 .fund-header {
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: bolder;
 }
 
@@ -386,22 +384,33 @@ body h3 {
 
 
 /* Hard Fork Section */
-.hf-apps-gear {
+.categories-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   padding: 0 10%;
 }
 
+.category {
+  display: flex;
+  flex-direction: column;
+}
+
 .section-popular {
-  background: url(../img/showcase-2.png) no-repeat center center/cover;
-  height: 300px;
+  background: url(../img/crypto.jpg) no-repeat center center/cover;
+  height: 250px;
+  margin-top: 20px;
+  opacity: 0.7;
 }
 
 .mostpopular {
-  padding-top: 200px;
+  padding-top: 150px;
   font-size: 12px;
   text-transform: uppercase;
+}
+
+.popular-header {
+  z-index: 1;
 }
 
 .popular-header li {
@@ -409,12 +418,13 @@ body h3 {
 }
 
 .popular-link {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
 }
 
 .byline-text {
-  font-size: small;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .byline-text li a,
@@ -424,10 +434,53 @@ body h3 {
 
 .hf-link {
   color: #f42;
-  font-size: xx-large;
+  font-size: x-large;
   font-weight: bolder;
 }
 
 .popular-header {
   padding: 0 10px;
+}
+
+.cat-latest {
+  background: #FEF9E7;
+  height: 90px;
+  justify-content: space-between;
+  color: #f42;
+}
+
+.cat-latest img {
+  width: 90px;
+  height: 90px;
+}
+
+.cat-latest-text {
+  padding: 10px;
+}
+
+.cat-latest-text h4,
+.cat-latest-text h5 {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.cat-latest-list ul{
+  background: #fff;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.cat-latest-list ul li{
+  padding: 8px 0 8px 15px;
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+}
+
+.cat-latest-list ul li::before {
+  content: "\2022";
+  color: #f42;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
 }
