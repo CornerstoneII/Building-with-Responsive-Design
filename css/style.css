@@ -200,7 +200,7 @@ body h3 {
 /* Latest News */
 .latest-news {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
   'category-header . . .'
   'card-1 card-2 card-3 card-4'
   'card-5 card-6 card-7 card-8';
@@ -264,12 +264,12 @@ body h3 {
 
 .card-5 {
   grid-area: card-5;
- 
+
 }
 
 .card-6 {
   grid-area: card-6;
- 
+
 }
 
 .card-7 {
@@ -279,61 +279,49 @@ body h3 {
 
 .card-8 {
   grid-area: card-8;
- 
+
 }
-/* .latest-news-section {
+
+/* Investment Section */
+.investment-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 0 10%;
 }
 
-.latest-news {
+.inv-card1,
+.inv-card2,
+.inv-card3,
+.inv-card4 {
   border: 1px solid black;
-  padding: 1rem;
-  height: 4rem;
 }
 
-.latest-news h2 {
-  margin-bottom: 50px;
-  color: tomato;
+.card-logo img {
+  width:60px;
+  height: 60px;
 }
 
- .img1 {
-  height: 250px;
-  background: url(../img/showcase-3.jpg) no-repeat center center/cover;
+/* Hard Fork Section */
+.hf-apps-gear {
+  display: grid;
+  grid-template-columns: repeat(autofill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 0 10%;
 }
 
-.img2 {
-  height: 250px;
-  background: url(../img/showcase-3.jpg) no-repeat center center/cover;
+.hardfork,
+.apps,
+.gear,
+.tech,
+.creative,
+.podium,
+.insights,
+.launch,
+.distract {
+  border: 1px solid black;
 }
 
-.img3 {
-  height: 250px;
-  background: url(../img/showcase-3.jpg) no-repeat center center/cover;
+.section-popular {
+  background-image: url(../img/crypto.jpg);
 }
-
-.img4 {
-  height: 250px;
-  background: url(../img/showcase-3.jpg) no-repeat center center/cover;
-}
-
-.img5 {
-  height: 250px;
-  background: url(../img/showcase-3.jpg) no-repeat center center/cover;
-}
-
-.img6 {
-  height: 250px;
-  background: url(../img/showcase-3.jpg) no-repeat center center/cover;
-}
-
-.img7 {
-  height: 250px;
-  background: url(../img/showcase-3.jpg) no-repeat center center/cover;
-}
-
-.img8 {
-  height: 250px;
-  background: url(../img/showcase-3.jpg) no-repeat center center/cover;
-} */
