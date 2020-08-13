@@ -280,6 +280,7 @@ body h3 {
   color: black;
   margin-top: 70px;
   position: relative;
+  margin-bottom: 150px;
 }
 
 .funding-header-section {
@@ -327,7 +328,7 @@ body h3 {
 .category-link {
   font-size: large;
   font-weight: bold;
-  
+
 }
 
 .category-link li {
@@ -340,8 +341,6 @@ body h3 {
   border: none;
   padding-left: 10px;
 }
-
-
 
 .company-name {
   background: #f42;
@@ -387,25 +386,48 @@ body h3 {
 
 
 /* Hard Fork Section */
-/* .hf-apps-gear {
+.hf-apps-gear {
   display: grid;
-  grid-template-columns: repeat(autofill, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   padding: 0 10%;
 }
 
-.hardfork,
-.apps,
-.gear,
-.tech,
-.creative,
-.podium,
-.insights,
-.launch,
-.distract {
-  border: 1px solid black;
+.section-popular {
+  background: url(../img/showcase-2.png) no-repeat center center/cover;
+  height: 300px;
 }
 
-.section-popular {
-  background-image: url(../img/crypto.jpg);
-} */
+.mostpopular {
+  padding-top: 200px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.popular-header li {
+  display: inline;
+}
+
+.popular-link {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.byline-text {
+  font-size: small;
+}
+
+.byline-text li a,
+.byline-text li time {
+  color: hsla(0,0%,100%,.6);
+}
+
+.hf-link {
+  color: #f42;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.popular-header {
+  padding: 0 10px;
+}
