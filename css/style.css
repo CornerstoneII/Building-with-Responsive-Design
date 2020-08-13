@@ -244,66 +244,140 @@ body h3 {
 
 .card-1 {
   grid-area: card-1;
-
 }
 
 .card-2 {
   grid-area: card-2;
-
 }
 
 .card-3 {
   grid-area: card-3;
-
 }
 
 .card-4 {
   grid-area: card-4;
-
 }
 
 .card-5 {
   grid-area: card-5;
-
 }
 
 .card-6 {
   grid-area: card-6;
-
 }
 
 .card-7 {
   grid-area: card-7;
-
 }
 
 .card-8 {
   grid-area: card-8;
-
 }
 
-/* Investment Section */
-.investment-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 20px;
+/* Funding Section */
+.funding-section {
   padding: 0 10%;
+  color: black;
+  margin-top: 70px;
 }
 
-.inv-card1,
-.inv-card2,
-.inv-card3,
-.inv-card4 {
-  border: 1px solid black;
+.funding-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
 }
 
-.card-logo img {
-  width:60px;
+.fa-chevron-right {
+  font-size: 16px;
+}
+
+.funding-header-section a {
+  color: #f42;
+}
+
+.funding-header-section a:hover {
+  color: #000;
+}
+
+.fund-header {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.funding-cards {
+  gap: 20px;
+}
+
+.fund-card {
+  width: 100%;
+  justify-content: center;
+}
+
+.category-link {
+  font-size: large;
+  font-weight: bold;
+  
+}
+
+.category-link li {
+  border-right: 1px solid #f42;
+  height: 15px;
+  padding: 0 10px;
+}
+
+.category-link li:last-child {
+  border: none;
+  padding-left: 10px;
+}
+
+
+
+.company-name {
+  background: #f42;
+  color: white;
+  font-size: x-large;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.fund-quote {
+  text-align: center;
+  line-height: 20px;
+  padding: 10px 0;
   height: 60px;
+  background: rgba(255,68,34,.08);
 }
+
+.fund-tags {
+  color: #555;
+  height: 90px;
+  background: #FEF9E7;
+  line-height: 25px;
+  font-size: 14px;
+  padding: 20px 10px;
+  font-size: 16px;
+}
+
+.fund-summary {
+  font-size: 16px;
+  height: 70px;
+  background: #FEF9E7;
+  padding: 15px 10px;
+  line-height: 25px;
+  border-top: 1px solid #f42;
+}
+
+.fund-summary a {
+  color: #555;
+}
+
+
 
 /* Hard Fork Section */
-.hf-apps-gear {
+/* .hf-apps-gear {
   display: grid;
   grid-template-columns: repeat(autofill, minmax(250px, 1fr));
   grid-gap: 20px;
@@ -324,4 +398,4 @@ body h3 {
 
 .section-popular {
   background-image: url(../img/crypto.jpg);
-}
+} */
