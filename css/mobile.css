@@ -213,4 +213,56 @@
     .cat-latest-list ul li {
         font-size: 13px;
     }
+
+    /* Latest Deals */
+    .latest-deals {
+        margin-left: -40px;
+        display: grid;
+        grid-template-areas:
+            'category-header . alldeals'
+            'card-1 card-2 card-3'
+            'card-4 card-5 card-6'
+            'card-7 card-8 .';
+    }
+
+    .alldeals {
+        grid-area: alldeals;
+    }
+
+    .moredeals {
+        color: #f42;
+        font-size: 16px;
+        position: absolute;
+        right: 75px;
+        margin-top: 5px;
+    }
+
+    .card-1 h2,
+    .card-2 h2,
+    .card-3 h2,
+    .card-4 h2,
+    .card-5 h2,
+    .card-6 h2,
+    .card-7 h2,
+    .card-8 h2 {
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 18px;
+    }
+
+    .card-1 p del,
+    .card-2 p del,
+    .card-3 p del,
+    .card-4 p del,
+    .card-5 p del,
+    .card-6 p del,
+    .card-7 p del,
+    .card-8 p del {
+        color: #aaa;
+    }
+
+    .top-footer,
+    .bottom-footer {
+        padding: 3em 0;
+    }
 }
