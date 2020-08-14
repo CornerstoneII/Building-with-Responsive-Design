@@ -120,4 +120,64 @@
       .latest-news p {
           font-size: 10.5px;
       }
+
+      /* Funding Section */
+      .funding-section {
+          margin-left: -40px;
+      }
+
+      .fund-header {
+        margin-bottom: 20px;
+      }
+
+      .funding-header-section {
+          display: grid;
+          grid-template-areas:
+              'fund-header'
+              'category-link';
+      }
+
+      .category-link li {
+          border-right: none;
+          padding-bottom: 2.1em;
+          margin-left: -10px;
+          font-weight: lighter;
+          font-size: 15px;
+      }
+
+      .category-link {
+          display: grid;
+          grid-template-areas:
+              'see'
+              'update'
+              'info';
+      }
+
+      .funding-cards {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          width: 100%;
+      }
+
+      .set-display-none {
+          display: none;
+      }
+
+      .company-name {
+          font-size: 16px;
+      }
+
+      .mleft {
+          margin-left: 25px;
+      }
+
+      .fund-quote p,
+      .fund-tags,
+      .fund-summary a {
+          font-size: 13px;
+      }
+
+      .fund-summary {
+          line-height: 18px;
+      }
 }
