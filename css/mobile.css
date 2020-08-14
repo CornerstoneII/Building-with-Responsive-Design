@@ -1,0 +1,66 @@
+/* Media Query */
+@media (max-width: 768px) {
+    .top-nav {
+        grid-template-columns: 2fr 1fr;
+        font-size: 10px;
+    }
+
+    .top-nav-right {
+        justify-self: center;
+        width: 80%;
+    }
+
+    .top-nav-left {
+        width: 80%;
+    }
+
+    .bottom-nav {
+        font-size: 10px;
+    }
+
+    .showcase {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        height: 300px;
+    }
+
+    .showcase img,
+    .date {
+        display: none;
+    }
+
+    .showcase-1 h5,
+    .showcase-2 h5,
+    .showcase-3 h5 {
+        font-size: 12px;
+    }
+
+    .showcase-1 h5 {
+        margin-top: 100px;
+    }
+
+    .showcase-1 a h3 {
+        font-size: 25px;
+    }
+
+    .showcase-2 a h3,
+    .showcase-3 a h3 {
+        font-size: 12px;
+    }
+
+    .showcase-2 h5,
+    .showcase-3 h5 {
+        margin-top: 90px;
+    }
+
+    .showcase-2,
+    .showcase-3 {
+        height: 210px;
+    }
+
+    .author-time-share {
+        width: auto;
+        font-size: 14px;
+    }
+
+}
