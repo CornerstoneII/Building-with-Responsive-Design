@@ -1,5 +1,6 @@
 /* Media Query */
 @media (max-width: 768px) {
+    /* Navigation Section */
     .top-nav {
         grid-template-columns: 2fr 1fr;
         font-size: 10px;
@@ -22,7 +23,10 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         height: 300px;
+        margin-bottom: 9em;
     }
+
+    /* Showcase Section */
 
     .showcase img,
     .date {
@@ -46,6 +50,7 @@
     .showcase-2 a h3,
     .showcase-3 a h3 {
         font-size: 12px;
+        line-height: 1.3em;
     }
 
     .showcase-2 h5,
@@ -63,4 +68,56 @@
         font-size: 14px;
     }
 
+    /* Latest News Section */
+    .latest-news {
+        display: grid;
+        grid-template-areas:
+            'category-header . .'
+            'card-1 card-2 card-3'
+            'card-4 card-5 card-6'
+            'card-7 card-8 .';
+        gap: 20px;
+        padding: 0 4%;
+    }
+
+    .card-1 {
+        grid-area: card-1;
+      }
+
+      .card-2 {
+        grid-area: card-2;
+      }
+
+      .card-3 {
+        grid-area: card-3;
+      }
+
+      .card-4 {
+        grid-area: card-4;
+      }
+
+      .card-5 {
+        grid-area: card-5;
+      }
+
+      .card-6 {
+        grid-area: card-6;
+      }
+
+      .card-7 {
+        grid-area: card-7;
+      }
+
+      .card-8 {
+        grid-area: card-8;
+      }
+
+      .latest-news h2 {
+          font-size: 12px;
+          line-height: 1.3em;
+      }
+
+      .latest-news p {
+          font-size: 10.5px;
+      }
 }
