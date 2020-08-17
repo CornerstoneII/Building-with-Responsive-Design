@@ -201,7 +201,7 @@ a {
   padding: 0 10%;
   gap: 20px;
 }
- 
+
 .latest-news img,
 .latest-deals img {
   width: 100%;
@@ -345,7 +345,7 @@ a {
   height: 90px;
   background: #FEF9E7;
   line-height: 25px;
- 
+
   padding: 20px 10px;
   font-size: 16px;
 }
@@ -371,14 +371,14 @@ a {
 
 .section-popular {
   background: url(../img/crypto.jpg) no-repeat center center/cover;
-  height: 250px;
+  height: 300px;
   margin-top: 20px;
   opacity: 0.7;
   color: #fff;
 }
 
 .mostpopular {
-  padding-top: 160px;
+  padding-top: 100px;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -508,3 +508,190 @@ a {
   width: 60px;
   height: 60px;
 }
+
+/* Media Query */
+@media (max-width: 1023px) {
+  .top-nav {
+      font-size: 12px;
+  }
+  .top-nav-left {
+    width: 70%;
+  }
+
+  .top-nav-right {
+    width: 55%;
+  }
+
+  .bottom-nav-left {
+    width: 60%;
+    font-size: 12px;
+  }
+
+  .showcase {
+    grid-template-columns: 650px 350px;
+
+  }
+
+  .showcase-2,
+  .showcase-3 {
+    height: 260px;
+  }
+
+ .showcase-2 h5,
+ .showcase-3 h5 {
+  margin-top: 100px;
+}
+
+  }
+
+  @media (max-width: 768px) {
+
+  /* Navigation Section */
+  .top-nav {
+    grid-template-columns: 2fr 1fr;
+    font-size: 10px;
+  }
+
+  .top-nav-right {
+    justify-self: center;
+    width: 80%;
+  }
+
+  .top-nav-left {
+    width: 80%;
+  }
+
+  .bottom-nav {
+    height: 40px;
+  }
+
+  .bottom-nav-left {
+    font-size: 10px;
+    width: 60%;
+  }
+
+  .fa-search {
+    padding: 10px 0 0 10px;
+  }
+
+  /* Showcase Section */
+  .showcase {
+    height: 300px;
+    margin-bottom: 70px;
+  }
+
+  .showcase-1 {
+    height: 330px;
+  }
+
+  .showcase-1 a {
+    margin-top: 150px;
+    line-height: 30px;
+  }
+
+  .showcase-1 h5 {
+    margin-top: 0;
+  }
+
+  .showcase-1 span p {
+    color: #fff;
+  }
+
+  .showcase-1 a h3 {
+    font-size: 25px;
+  }
+
+  .showcase-2 a h3,
+  .showcase-3 a h3 {
+    font-size: 14px;
+    line-height: 1.3em;
+  }
+
+
+  .showcase-3 h5 {
+    margin-top: 50px;
+  }
+
+  .showcase-2 h5 {
+    margin-top: 70px;
+  }
+
+  .showcase-2,
+  .showcase-3 {
+    height: 160px;
+  }
+
+  .author-time-share {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  /* Latest News Section */
+  .latest-news,
+  .latest-deals {
+      grid-template-areas:
+    'category-header . .'
+    'card-1 card-2 card-3'
+    'card-4 card-5 card-6'
+    'card-7 card-8 .';
+    padding: 0 4%;
+    gap: 20px;
+  }
+
+  .latest-news h2,
+  .latest-deals h2 {
+    font-size: 16px;
+  }
+
+  .latest-news p,
+  .latest-deals p {
+    font-size: 10.5px;
+  }
+
+  /* Funding Section */
+  .funding-header-section {
+    padding: 0;
+  }
+
+  .funding-section {
+    padding: 0 4%;
+    margin: 40px 0;
+  }
+
+  .funding-cards {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 300px;
+    width: 100%;
+  }
+
+  .funding-cards {
+    width: 100%  ;
+    height: 20px;
+  }
+
+  .fund-header {
+    margin-bottom: 20px;
+  }
+
+  .update, .more, .info {
+    display: none;
+  }
+
+  .fund-card:last-child {
+    display: none;
+  }
+
+  /* HardFork Apps Gear Section */
+  .categories-section {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 4%;
+  }
+
+  .category:last-child {
+      display: none;
+  }
+
+  .section-popular {
+    height: 200px;
+  }
+  }
