@@ -71,13 +71,46 @@ a {
 
 .top-nav {
   grid-template-columns: 3fr 2fr;
-  background: #000000;
+  background: #000;
   height: 30px;
   padding: 0 20px;
 }
 
 .top-nav a {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.bottom-nav a {
+  color: var(--primary-text-color);
+}
+
+.showcase-1 a {
+  margin-top: 240px;
+  z-index: 1;
+  color: var(--white-color);
+}
+
+.showcase-2 a,
+.showcase-3 a {
+  color: var(--white-color);
+}
+
+.category-link a {
+  font-size: large;
+  color: #f42;
+}
+
+.fund-summary a {
+  color: var(--primary-text-color);
+}
+
+.byline-text li a,
+.byline-text li time {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.funding-header-section a:hover {
+  color: #000;
 }
 
 .top-nav a:hover {
@@ -99,10 +132,6 @@ a {
   justify-content: space-between;
   height: 50px;
   padding: 0 20px;
-}
-
-.bottom-nav a {
-  color: var(--primary-text-color);
 }
 
 .bottom-nav-left {
@@ -150,15 +179,9 @@ a {
   justify-content: space-between;
 }
 
-.showcase-1 a {
-  margin-top: 240px;
-  z-index: 1;
-  color: var(--white-color);
-}
-
-.showcase-2 a,
-.showcase-3 a {
-  color: var(--white-color);
+.showcase-2 h3,
+.showcase-3 h3 {
+  font-size: 25px;
 }
 
 .showcase-1 a h3 {
@@ -167,11 +190,6 @@ a {
 
 .bold {
   font-weight: bold;
-}
-
-.showcase-2 h3,
-.showcase-3 h3 {
-  font-size: 25px;
 }
 
 .showcase-2 h5,
@@ -196,9 +214,9 @@ a {
 .latest-news,
 .latest-deals {
   grid-template-areas:
-  'category-header . . .'
-  'card-1 card-2 card-3 card-4'
-  'card-5 card-6 card-7 card-8';
+    'category-header . . .'
+    'card-1 card-2 card-3 card-4'
+    'card-5 card-6 card-7 card-8';
   padding: 0 10%;
   gap: 20px;
 }
@@ -295,10 +313,6 @@ a {
   font-size: 16px;
 }
 
-.funding-header-section a:hover {
-  color: #000;
-}
-
 .fund-header {
   font-size: x-large;
 }
@@ -311,15 +325,14 @@ a {
   width: 100%;
 }
 
-.category-link a {
-  font-size: large;
-  color: #f42;
-}
-
 .category-link li {
   border-right: 1px solid #f42;
   height: 15px;
   padding: 0 10px;
+}
+
+.popular-header li {
+  display: inline;
 }
 
 .category-link li:last-child {
@@ -339,13 +352,13 @@ a {
   line-height: 20px;
   padding: 10px 0;
   height: 60px;
-  background: rgba(255,68,34,.08);
+  background: rgba(255, 68, 34, 0.08);
 }
 
 .fund-tags {
   color: var(--primary-text-color);
   height: 90px;
-  background: #FEF9E7;
+  background: #fef9e7;
   line-height: 25px;
   padding: 20px 10px;
   font-size: 16px;
@@ -354,14 +367,10 @@ a {
 .fund-summary {
   font-size: 16px;
   height: 70px;
-  background: #FEF9E7;
+  background: #fef9e7;
   padding: 15px 10px;
   line-height: 25px;
   border-top: 1px solid #f42;
-}
-
-.fund-summary a {
-  color: var(--primary-text-color);
 }
 
 /* Categories Section */
@@ -388,10 +397,6 @@ a {
   z-index: 1;
 }
 
-.popular-header li {
-  display: inline;
-}
-
 .popular-link {
   font-size: 22px;
   color: #fff;
@@ -399,11 +404,6 @@ a {
 
 .byline-text {
   font-size: 12px;
-}
-
-.byline-text li a,
-.byline-text li time {
-  color: hsla(0,0%,100%,.6);
 }
 
 .hf-link {
@@ -536,7 +536,6 @@ a {
   grid-template-areas: 
   'showcase-1 showcase-1 showcase-1 showcase-2'
   'showcase-1 showcase-1 showcase-1 showcase-3';
-
 }
 
 .showcase-1 {
