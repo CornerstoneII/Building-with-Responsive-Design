@@ -515,7 +515,6 @@ a {
 .top-nav {
   font-size: 12px;
   width: 100%;
-
 }
 
 .top-nav-left {
@@ -536,12 +535,13 @@ a {
   grid-template-areas: 
   'showcase-1 showcase-1 showcase-1 showcase-2'
   'showcase-1 showcase-1 showcase-1 showcase-3';
+  gap: 10px;
 }
 
 .showcase-1 {
   grid-area: showcase-1;
   height: 500px;
-  width: 690px;
+  width: 100%;
 }
 
 .showcase-2 {
@@ -590,7 +590,6 @@ a {
 }
 
 /* Funding Section */
-/* Funding Section */
 .funding-header-section {
   padding: 0;
 }
@@ -621,6 +620,7 @@ a {
 
 /* Categories Section */
 .categories-section {
+  /* grid-template-columns: repeat(2, 1fr); */
   padding: 0 4%;
 }
 
