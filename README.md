@@ -5,13 +5,13 @@
 This project focuses on reponsiveness to ensure great experience for mobile users. This project is based on The Odin Project and Microverse peer programming collaborative coding. You can find the original project specification at: https://www.theodinproject.com/courses/html5-and-css3/lessons/building-with-responsive-design
 
 ## Desktop
-![TNW Laptop](./img/screenshot.PNG) 1440px view.
+![TNW Laptop](./img/screenshot1440.png) 1440px view.
 
 ## Tablet
-![TNW Tablet](./img/.PNG) 767px view.
+![TNW Tablet](./img/767a.png) 767px view.
 
 ## Mobile
-![TNW Mobile](./img/384.PNG) 384px view.
+![TNW Mobile](./img/384.png) 384px view.
 
 ## Built With
 
