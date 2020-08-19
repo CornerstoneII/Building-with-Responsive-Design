@@ -9,15 +9,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
     <script src="https://kit.fontawesome.com/ac0885c8f6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <!-- Navigation Section -->
-        <nav class="top-nav align grid">
-            <ul class="top-nav-left flex">
+        <nav class="top-nav">
+            <ul class="top-nav-left">
                 <li><a href="#">News</a></li>
                 <li><a href="#">Events ▾</a></li>
                 <li><a href="#">Business ▾</a></li>
@@ -25,15 +24,15 @@
                 <li><a href="#">Spaces</a></li>
                 <li><a href="#">Terms & Conditions</a></li>
             </ul>
-            <ul class="top-nav-right flex">
+            <ul class="top-nav-right">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Advertise</a></li>
                 <li><a href="#">Jobs</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <nav class="bottom-nav flex align">
-            <ul class="bottom-nav-left flex">
+        <nav class="bottom-nav">
+            <ul class="bottom-nav-left">
                 <li><a href="#">LATEST</a></li>
                 <li><a href="#">HARD FORK</a></li>
                 <li><a href="#">PLUGGED</a></li>
@@ -42,172 +41,199 @@
                 <li><a href="#">SHIFT</a></li>
                 <li><a href="#">NEURAL</a></li>
             </ul>
-            <div class="bottom-nav-right full-height">
-                <i class="fas fa-search full-height"></i>
+            <div class="bottom-nav-right">
+                <i class="fas fa-search"></i>
             </div>
         </nav>
+
+        <div class="mobile-header">
+            <div class="header-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section class="showcase grid gap">
-            <div class="showcase-1 flex column-flex py-2">
-                <p class="top-text flex">
-                    <img src="./img/tnw.svg" alt="TNW logo">
-                    <span>
-                        Tuesday - August 11, 2020
-                    </span>
-                </p>
-                <a href="#">
-                    <h5>WORLD</h5>
-                    <h3 class="bold">4 ridiculously easy ways you can be more eco-friendly</h3>
-                    <div class="author-time-share flex">
-                        <p>by Giselle Defares</p>
-                        <span>
-                            <i class="far fa-clock margin-left"></i>
-                            1 hour ago
-                            <i class="fas fa-share-alt margin-left"></i> 5
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="right-showcase flex column-flex gap">
-                <div class="showcase-2 flex column-flex py-2">
-                    <a href="#">
+        <section class="showcase">
+            <div class="showcase-1">
+                <div class="showcase-1-content">
+                    <p class="top-text">
+                        <img src="./img/tnw.svg" alt="TNW logo" class="showcase-logo">
+                        <span class="date">Tuesday - August 11, 2020</span>
+                    </p>
+                    <a href="#" class="bottom-text">
                         <h5>WORLD</h5>
-                        <h3 class="bold">UK court rules police use of facial recognition was ‘unlawful’</h3>
+                        <h3>4 ridiculously easy ways you can be more eco-friendly</h3>
                         <div class="author-time-share flex">
-                            <p>by Thomas Macaulayares</p>
-                            <span>
-                                <i class="far fa-clock margin-left"></i>
-                                3 hours ago
-                                <i class="fas fa-share-alt margin-left"></i> 19
-                            </span>
+                            <p>by Giselle Defares</p>
+                            <p>
+                                <i class="far fa-clock"></i>
+                                1 hour ago
+                                <i class="fas fa-share-alt"></i> 5
+                            </p>
                         </div>
                     </a>
                 </div>
-                <div class="showcase-3 flex column-flex py-2">
-                    <a href="#">
-                        <h5>WORLD</h5>
-                        <h3 class="bold">Heatwaves don’t just give you sunburn — they can harm your mental health
-                            too
-                        </h3>
-                        <div class="author-time-share flex">
-                            <p>by The Conversation</p>
-                            <span>
-                                <i class="far fa-clock margin-left"></i> 3 hours ago
-                                <i class="fas fa-share-alt margin-left"></i> 9
-                            </span>
-                        </div>
-                    </a>
+            </div>
+            <div class="right-showcase">
+                <div class="showcase-2">
+                    <div class="showcase-2-content">
+                        <a href="#">
+                            <h5>WORLD</h5>
+                            <h3>UK court rules police use of facial recognition was ‘unlawful’</h3>
+                            <div class="author-time-share">
+                                <p>by Thomas Macaulayares</p>
+                                <span>
+                                    <i class="far fa-clock"></i>
+                                    3 hours ago
+                                    <i class="fas fa-share-alt"></i> 19
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="showcase-3">
+                    <div class="showcase-3-content">
+                        <a href="#">
+                            <h5>WORLD</h5>
+                            <h3>Heatwaves don’t just give you sunburn — they can harm your mental health too
+                            </h3>
+                            <div class="author-time-share">
+                                <p>by The Conversation</p>
+                                <span>
+                                    <i class="far fa-clock"></i> 3 hours ago
+                                    <i class="fas fa-share-alt"></i> 9
+                                </span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- Latest News Section -->
-        <section class="latest-news grid bold">
+        <section class="latest-news">
             <h1>
-                <a href="#" class="category-header align sec-color">Latest news
+                <a href="#" class="category-header">Latest news
                     <i class="fas fa-chevron-right"></i>
                 </a>
             </h1>
+
             <div class="card-1">
                 <img src="./img/card-1.png" alt="Genius glasses">
-                <h2>
-                    Genius loses lyric-scraping lawsuit against Google,
-                    despite watermark trick catching the Big G 'red-handed'
-                </h2>
-                <p>
-                    Thomas Macaulay
-                    <span> -3 hours ago</span>
-                </p>
+                <div>
+                    <h2>
+                        Genius loses lyric-scraping lawsuit against Google,
+                        despite watermark trick catching the Big G 'red-handed'
+                    </h2>
+                    <p>
+                        Thomas Macaulay
+                        <span> -3 hours ago</span>
+                    </p>
+                </div>
             </div>
             <div class="card-2">
                 <img src="./img/card-1.png" alt="Genius glasses">
-                <h2>
-                    Genius loses lyric-scraping lawsuit against Google,
-                    despite watermark trick catching the Big G 'red-handed'
-                </h2>
-                <p>
-                    Thomas Macaulay
-                    <span> -3 hours ago</span>
-                </p>
+                <div>
+                    <h2>
+                        Genius loses lyric-scraping lawsuit against Google,
+                        despite watermark trick catching the Big G 'red-handed'
+                    </h2>
+                    <p>
+                        Thomas Macaulay
+                        <span> -3 hours ago</span>
+                    </p>
+                </div>
             </div>
             <div class="card-3">
                 <img src="./img/card-1.png" alt="Genius glasses">
-                <h2>
-                    Genius loses lyric-scraping lawsuit against Google,
-                    despite watermark trick catching the Big G 'red-handed'
-                </h2>
-                <p>
-                    Thomas Macaulay
-                    <span> -3 hours ago</span>
-                </p>
+                <div>
+                    <h2>
+                        Genius loses lyric-scraping lawsuit against Google,
+                        despite watermark trick catching the Big G 'red-handed'
+                    </h2>
+                    <p>
+                        Thomas Macaulay
+                        <span> -3 hours ago</span>
+                    </p>
+                </div>
             </div>
             <div class="card-4">
                 <img src="./img/card-1.png" alt="Genius glasses">
-                <h2>
-                    Genius loses lyric-scraping lawsuit against Google,
-                    despite watermark trick catching the Big G 'red-handed'
-                </h2>
-                <p>
-                    Thomas Macaulay
-                    <span> -3 hours ago</span>
-                </p>
+                <div>
+                    <h2>
+                        Genius loses lyric-scraping lawsuit against Google,
+                        despite watermark trick catching the Big G 'red-handed'
+                    </h2>
+                    <p>
+                        Thomas Macaulay
+                        <span> -3 hours ago</span>
+                    </p>
+                </div>
             </div>
             <div class="card-5">
                 <img src="./img/card-1.png" alt="Genius glasses">
-                <h2>
-                    Genius loses lyric-scraping lawsuit against Google,
-                    despite watermark trick catching the Big G 'red-handed'
-                </h2>
-                <p>
-                    Thomas Macaulay
-                    <span> -3 hours ago</span>
-                </p>
+                <div>
+                    <h2>
+                        Genius loses lyric-scraping lawsuit against Google,
+                        despite watermark trick catching the Big G 'red-handed'
+                    </h2>
+                    <p>
+                        Thomas Macaulay
+                        <span> -3 hours ago</span>
+                    </p>
+                </div>
             </div>
             <div class="card-6">
                 <img src="./img/card-1.png" alt="Genius glasses">
-                <h2>
-                    Genius loses lyric-scraping lawsuit against Google,
-                    despite watermark trick catching the Big G 'red-handed'
-                </h2>
-                <p>
-                    Thomas Macaulay
-                    <span> -3 hours ago</span>
-                </p>
+                <div>
+                    <h2>
+                        Genius loses lyric-scraping lawsuit against Google,
+                        despite watermark trick catching the Big G 'red-handed'
+                    </h2>
+                    <p>
+                        Thomas Macaulay
+                        <span> -3 hours ago</span>
+                    </p>
+                </div>
             </div>
             <div class="card-7">
                 <img src="./img/card-1.png" alt="Genius glasses">
-                <h2>
-                    Genius loses lyric-scraping lawsuit against Google,
-                    despite watermark trick catching the Big G 'red-handed'
-                </h2>
-                <p>
-                    Thomas Macaulay
-                    <span> -3 hours ago</span>
-                </p>
+                <div>
+                    <h2>
+                        Genius loses lyric-scraping lawsuit against Google,
+                        despite watermark trick catching the Big G 'red-handed'
+                    </h2>
+                    <p>
+                        Thomas Macaulay
+                        <span> -3 hours ago</span>
+                    </p>
+                </div>
             </div>
             <div class="card-8">
                 <img src="./img/card-1.png" alt="Genius glasses">
-                <h2>
-                    Genius loses lyric-scraping lawsuit against Google,
-                    despite watermark trick catching the Big G 'red-handed'
-                </h2>
-                <p>
-                    Thomas Macaulay
-                    <span> -3 hours ago</span>
-                </p>
+                <div>
+                    <h2>
+                        Genius loses lyric-scraping lawsuit against Google,
+                        despite watermark trick catching the Big G 'red-handed'
+                    </h2>
+                    <p>
+                        Thomas Macaulay
+                        <span> -3 hours ago</span>
+                    </p>
+                </div>
             </div>
         </section>
 
         <!-- Funding Section -->
         <section class="funding-section">
-            <div class="funding-header-section flex align">
-                <h1 class="fund-header bold">
-                    <a href="#" class="sec-color">Latest funding rounds on index.co
+            <div class="funding-header-section">
+                <h1 class="fund-header">
+                    <a href="#">Latest funding rounds on index.co
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </h1>
-                <ul class="category-link bold flex">
+                <ul class="category-link">
                     <li class="info"><a href="#">Add info</a></li>
                     <li class="update"><a href="#">Get updates by email</a></li>
                     <li class="more"><a href="#">See more</a></li>
@@ -215,57 +241,9 @@
             </div>
 
 
-            <div class="funding-cards grid-4-col">
-                <div class="fund-card justify">
-                    <div class="company-name align py-2 bold">
-                        Fyllo
-                    </div>
-                    <div class="card-logo">
-                        <img src="./img/company-logo.jpg" alt="Fyllo company logo" class="py-2">
-                    </div>
-                    <div class="fund-quote">
-                        <p>$16M</p>
-                        <p class="mleft">SERIES A</p>
-                    </div>
-                    <div class="fund-tags">
-                        <i class="fas fa-tags"></i>
-                        <span>Software, +3</span><br>
-                        <i class="fas fa-briefcase"></i>
-                        <span>Stage 2 Capital</span>
-                    </div>
-                    <div class="fund-summary">
-                        <a href="#info">
-                            GoSite Closes $16M in series A Funding <span>on&nbsp;FinSMEs</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="fund-card justify">
-                    <div class="company-name align py-2 bold">
-                        Fyllo
-                    </div>
-                    <div class="card-logo">
-                        <img src="./img/company-logo.jpg" alt="Fyllo company logo" class="py-2">
-                    </div>
-                    <div class="fund-quote">
-                        <p>$16M</p>
-                        <p class="mleft">SERIES A</p>
-                    </div>
-                    <div class="fund-tags">
-                        <i class="fas fa-tags"></i>
-                        <span>Software, +3</span><br>
-                        <i class="fas fa-briefcase"></i>
-                        <span>Stage 2 Capital</span>
-                    </div>
-                    <div class="fund-summary">
-                        <a href="#info">
-                            GoSite Closes $16M in series A Funding <span>on&nbsp;FinSMEs</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="fund-card justify set-display-none">
-                    <div class="company-name align py-2 bold">
+            <div class="funding-cards">
+                <div class="fund-card">
+                    <div class="company-name">
                         Fyllo
                     </div>
                     <div class="card-logo">
@@ -288,8 +266,8 @@
                     </div>
                 </div>
 
-                <div class="fund-card justify">
-                    <div class="company-name align py-2 bold">
+                <div class="fund-card">
+                    <div class="company-name">
                         Fyllo
                     </div>
                     <div class="card-logo">
@@ -297,7 +275,55 @@
                     </div>
                     <div class="fund-quote">
                         <p>$16M</p>
-                        <p class="mleft">SERIES A</p>
+                        <p>SERIES A</p>
+                    </div>
+                    <div class="fund-tags">
+                        <i class="fas fa-tags"></i>
+                        <span>Software, +3</span><br>
+                        <i class="fas fa-briefcase"></i>
+                        <span>Stage 2 Capital</span>
+                    </div>
+                    <div class="fund-summary">
+                        <a href="#info">
+                            GoSite Closes $16M in series A Funding <span>on&nbsp;FinSMEs</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="fund-card">
+                    <div class="company-name">
+                        Fyllo
+                    </div>
+                    <div class="card-logo">
+                        <img src="./img/company-logo.jpg" alt="Fyllo company logo" class="py-2">
+                    </div>
+                    <div class="fund-quote">
+                        <p>$16M</p>
+                        <p>SERIES A</p>
+                    </div>
+                    <div class="fund-tags">
+                        <i class="fas fa-tags"></i>
+                        <span>Software, +3</span><br>
+                        <i class="fas fa-briefcase"></i>
+                        <span>Stage 2 Capital</span>
+                    </div>
+                    <div class="fund-summary">
+                        <a href="#info">
+                            GoSite Closes $16M in series A Funding <span>on&nbsp;FinSMEs</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="fund-card">
+                    <div class="company-name">
+                        Fyllo
+                    </div>
+                    <div class="card-logo">
+                        <img src="./img/company-logo.jpg" alt="Fyllo company logo" class="py-2">
+                    </div>
+                    <div class="fund-quote">
+                        <p>$16M</p>
+                        <p>SERIES A</p>
                     </div>
                     <div class="fund-tags">
                         <i class="fas fa-tags"></i>
@@ -315,11 +341,11 @@
         </section>
 
         <!-- Categories Section -->
-        <section class="categories-section grid-3-col">
+        <section class="categories-section">
             <!-- Hard Fork -->
-            <div class="category flex column-flex">
+            <div class="category">
                 <h2>
-                    <a href="#" class="hf-link bold sec-color">Hard Fork
+                    <a href="#" class="hf-link">Hard Fork
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </h2>
@@ -332,12 +358,12 @@
                                 adipisicing elit.
                             </a>
                         </h3>
-                        <ul class="byline-text bold">
+                        <ul class="byline-text">
                             <li>
-                                <a href="#Author">Sherlock Holmes</a>
+                                <a href="#">Sherlock Holmes</a>
                             </li>
                             <li>
-                                <time datetime="2020-08-07T14:24:22+00:00" class="timeago">1 Day ago</time>
+                                <time datetime="2020-08-07T14:24 class=" timeago">1 Day ago</time>
                             </li>
                         </ul>
                     </header>
@@ -370,7 +396,7 @@
             <!-- Apps -->
             <div class="category">
                 <h2>
-                    <a href="#" class="hf-link bold sec-color">Apps
+                    <a href="#" class="hf-link">Apps
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </h2>
@@ -421,7 +447,7 @@
             <!-- Gear -->
             <div class="category">
                 <h2>
-                    <a href="#" class="hf-link bold sec-color">Gear
+                    <a href="#" class="hf-link">Gear
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </h2>
@@ -434,7 +460,7 @@
                                 adipisicing elit.
                             </a>
                         </h3>
-                        <ul class="byline-text bold">
+                        <ul class="byline-text">
                             <li>
                                 <a href="#Author">Sherlock Holmes</a>
                             </li>
@@ -445,8 +471,8 @@
                     </header>
                 </div>
 
-                <div class="cat-latest flex">
-                    <div class="cat-latest-text py-2">
+                <div class="cat-latest">
+                    <div class="cat-latest-text">
                         <h5>LATEST</h5>
                         <h4>
                             Satoshi Nakaboto: ‘Nasdaq-listed company buys
@@ -472,7 +498,7 @@
             <!-- Tech -->
             <div class="category">
                 <h2>
-                    <a href="#" class="hf-link bold sec-color">Tech
+                    <a href="#" class="hf-link">Tech
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </h2>
@@ -485,7 +511,7 @@
                                 adipisicing elit.
                             </a>
                         </h3>
-                        <ul class="byline-text bold">
+                        <ul class="byline-text">
                             <li>
                                 <a href="#Author">Sherlock Holmes</a>
                             </li>
@@ -496,8 +522,8 @@
                     </header>
                 </div>
 
-                <div class="cat-latest flex">
-                    <div class="cat-latest-text py-2">
+                <div class="cat-latest">
+                    <div class="cat-latest-text">
                         <h5>LATEST</h5>
                         <h4>
                             Satoshi Nakaboto: ‘Nasdaq-listed company buys
@@ -523,7 +549,7 @@
             <!-- Creative -->
             <div class="category">
                 <h2>
-                    <a href="#" class="hf-link bold sec-color">Creative
+                    <a href="#" class="hf-link">Creative
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </h2>
@@ -536,7 +562,7 @@
                                 adipisicing elit.
                             </a>
                         </h3>
-                        <ul class="byline-text bold">
+                        <ul class="byline-text">
                             <li>
                                 <a href="#Author">Sherlock Holmes</a>
                             </li>
@@ -547,8 +573,8 @@
                     </header>
                 </div>
 
-                <div class="cat-latest flex">
-                    <div class="cat-latest-text py-2">
+                <div class="cat-latest">
+                    <div class="cat-latest-text">
                         <h5>LATEST</h5>
                         <h4>
                             Satoshi Nakaboto: ‘Nasdaq-listed company buys
@@ -574,7 +600,7 @@
             <!-- Podium -->
             <div class="category">
                 <h2>
-                    <a href="#" class="hf-link bold sec-color">Podium
+                    <a href="#" class="hf-link">Podium
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </h2>
@@ -587,7 +613,7 @@
                                 adipisicing elit.
                             </a>
                         </h3>
-                        <ul class="byline-text bold">
+                        <ul class="byline-text">
                             <li>
                                 <a href="#Author">Sherlock Holmes</a>
                             </li>
@@ -598,8 +624,8 @@
                     </header>
                 </div>
 
-                <div class="cat-latest flex">
-                    <div class="cat-latest-text py-2">
+                <div class="cat-latest">
+                    <div class="cat-latest-text">
                         <h5>LATEST</h5>
                         <h4>
                             Satoshi Nakaboto: ‘Nasdaq-listed company buys
@@ -625,7 +651,7 @@
             <!-- Insights -->
             <div class="category">
                 <h2>
-                    <a href="#" class="hf-link bold sec-color">Insights
+                    <a href="#" class="hf-link">Insights
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </h2>
@@ -638,7 +664,7 @@
                                 adipisicing elit.
                             </a>
                         </h3>
-                        <ul class="byline-text bold">
+                        <ul class="byline-text">
                             <li>
                                 <a href="#Author">Sherlock Holmes</a>
                             </li>
@@ -649,8 +675,8 @@
                     </header>
                 </div>
 
-                <div class="cat-latest flex">
-                    <div class="cat-latest-text py-2">
+                <div class="cat-latest">
+                    <div class="cat-latest-text">
                         <h5>LATEST</h5>
                         <h4>
                             Satoshi Nakaboto: ‘Nasdaq-listed company buys
@@ -676,7 +702,7 @@
             <!-- Launch -->
             <div class="category">
                 <h2>
-                    <a href="#" class="hf-link bold sec-color">Launch
+                    <a href="#" class="hf-link">Launch
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </h2>
@@ -689,7 +715,7 @@
                                 adipisicing elit.
                             </a>
                         </h3>
-                        <ul class="byline-text bold">
+                        <ul class="byline-text">
                             <li>
                                 <a href="#Author">Sherlock Holmes</a>
                             </li>
@@ -700,8 +726,8 @@
                     </header>
                 </div>
 
-                <div class="cat-latest flex">
-                    <div class="cat-latest-text py-2">
+                <div class="cat-latest">
+                    <div class="cat-latest-text">
                         <h5>LATEST</h5>
                         <h4>
                             Satoshi Nakaboto: ‘Nasdaq-listed company buys
@@ -727,7 +753,7 @@
             <!-- Distract -->
             <div class="category">
                 <h2>
-                    <a href="#" class="hf-link bold sec-color">Distract
+                    <a href="#" class="hf-link">Distract
                         <i class="fas fa-chevron-right"></i>
                     </a>
                 </h2>
@@ -740,7 +766,7 @@
                                 adipisicing elit.
                             </a>
                         </h3>
-                        <ul class="byline-text bold">
+                        <ul class="byline-text">
                             <li>
                                 <a href="#Author">Sherlock Holmes</a>
                             </li>
@@ -751,8 +777,8 @@
                     </header>
                 </div>
 
-                <div class="cat-latest flex">
-                    <div class="cat-latest-text py-2">
+                <div class="cat-latest">
+                    <div class="cat-latest-text">
                         <h5>LATEST</h5>
                         <h4>
                             Satoshi Nakaboto: ‘Nasdaq-listed company buys
@@ -786,107 +812,123 @@
             </h1>
             <div class="card-1">
                 <img src="./img/latest-deal.jpg" alt="latest phone deal">
-                <h2 class="bold">
-                    The Adobe XD Professional Certification Bundle
-                </h2>
-                <p>
-                    <del>$995</del>
-                    <span>$29.99</span>
-                </p>
+                <div>
+                    <h2 class="bold">
+                        The Adobe XD Professional Certification Bundle
+                    </h2>
+                    <p>
+                        <del>$995</del>
+                        <span>$29.99</span>
+                    </p>
+                </div>
             </div>
 
             <div class="card-2">
                 <img src="./img/latest-deal.jpg" alt="latest phone deal">
-                <h2 class="bold">
-                    The Adobe XD Professional Certification Bundle
-                </h2>
-                <p>
-                    <del>$995</del>
-                    <span>$29.99</span>
-                </p>
+                <div>
+                    <h2 class="bold">
+                        The Adobe XD Professional Certification Bundle
+                    </h2>
+                    <p>
+                        <del>$995</del>
+                        <span>$29.99</span>
+                    </p>
+                </div>
             </div>
 
             <div class="card-3">
                 <img src="./img/latest-deal.jpg" alt="latest phone deal">
-                <h2 class="bold">
-                    The Adobe XD Professional Certification Bundle
-                </h2>
-                <p>
-                    <del>$995</del>
-                    <span>$29.99</span>
-                </p>
+                <div>
+                    <h2 class="bold">
+                        The Adobe XD Professional Certification Bundle
+                    </h2>
+                    <p>
+                        <del>$995</del>
+                        <span>$29.99</span>
+                    </p>
+                </div>
             </div>
 
             <div class="card-4">
                 <img src="./img/latest-deal.jpg" alt="latest phone deal">
-                <h2 class="bold">
-                    The Adobe XD Professional Certification Bundle
-                </h2>
-                <p>
-                    <del>$995</del>
-                    <span>$29.99</span>
-                </p>
+                <div>
+                    <h2 class="bold">
+                        The Adobe XD Professional Certification Bundle
+                    </h2>
+                    <p>
+                        <del>$995</del>
+                        <span>$29.99</span>
+                    </p>
+                </div>
             </div>
 
             <div class="card-5">
                 <img src="./img/latest-deal.jpg" alt="latest phone deal">
-                <h2 class="bold">
-                    The Adobe XD Professional Certification Bundle
-                </h2>
-                <p>
-                    <del>$995</del>
-                    <span>$29.99</span>
-                </p>
+                <div>
+                    <h2 class="bold">
+                        The Adobe XD Professional Certification Bundle
+                    </h2>
+                    <p>
+                        <del>$995</del>
+                        <span>$29.99</span>
+                    </p>
+                </div>
             </div>
 
             <div class="card-6">
                 <img src="./img/latest-deal.jpg" alt="latest phone deal">
-                <h2 class="bold">
-                    The Adobe XD Professional Certification Bundle
-                </h2>
-                <p>
-                    <del>$995</del>
-                    <span>$29.99</span>
-                </p>
+                <div>
+                    <h2 class="bold">
+                        The Adobe XD Professional Certification Bundle
+                    </h2>
+                    <p>
+                        <del>$995</del>
+                        <span>$29.99</span>
+                    </p>
+                </div>
             </div>
 
             <div class="card-7">
                 <img src="./img/latest-deal.jpg" alt="latest phone deal">
-                <h2 class="bold">
-                    The Adobe XD Professional Certification Bundle
-                </h2>
-                <p>
-                    <del>$995</del>
-                    <span>$29.99</span>
-                </p>
+                <div>
+                    <h2 class="bold">
+                        The Adobe XD Professional Certification Bundle
+                    </h2>
+                    <p>
+                        <del>$995</del>
+                        <span>$29.99</span>
+                    </p>
+                </div>
             </div>
 
             <div class="card-8">
                 <img src="./img/latest-deal.jpg" alt="latest phone deal">
-                <h2 class="bold">
-                    The Adobe XD Professional Certification Bundle
-                </h2>
-                <p>
-                    <del>$995</del>
-                    <span>$29.99</span>
-                </p>
+                <div>
+                    <h2 class="bold">
+                        The Adobe XD Professional Certification Bundle
+                    </h2>
+                    <p>
+                        <del>$995</del>
+                        <span>$29.99</span>
+                    </p>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="flex column-flex">
-        <div class="top-footer flex column-flex justify align">
-            <ul class="social-icons flex">
-                <li><i class="fab fa-facebook py-2"></i></li>
-                <li><i class="fab fa-twitter py-2"></i></li>
-                <li><i class="fab fa-youtube py-2"></i></li>
-                <li><i class="fab fa-pinterest py-2"></i></li>
-                <li><i class="fab fa-instagram py-2"></i></li>
-                <li><i class="fas fa-rss py-2"></i></li>
-                <li><i class="far fa-envelope py-2"></i></li>
+    <footer>
+        <div class="top-footer">
+            <ul class="social-icons">
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-pinterest"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fas fa-rss"></i></li>
+                <li><i class="far fa-envelope"></i></li>
             </ul>
 
-            <ul class="footer-links flex">
+            <ul class="footer-links">
                 <li>EVENTS</li>
                 <li>ABOUT</li>
                 <li>ADVERTISE</li>
@@ -894,8 +936,7 @@
                 <li>CONTACT</li>
             </ul>
         </div>
-        <div class="bottom-footer flex justify align">
-
+        <div class="bottom-footer">
             <a href="#">
                 <img class="footer-img-1" src="./img/tnw.svg" alt="TNW logo">
             </a>
@@ -903,7 +944,22 @@
             <a href="#">
                 <img class="footer-img-2" src="./img/stackpath.svg" alt="stackpath logo">
             </a>
+        </div>
 
+        <div class="mobile-bottom-footer">
+
+            <span>
+                <img class="mobile-footer-img-1" src="./img/tnw.svg" alt="TNW logo">
+                &copy; 2006–2020 The Next Web B.V.
+            </span>
+
+            <span>
+                Made with &lt;3 in Amsterdam.
+            </span>
+            <span>
+                Powered by
+                <img class="mobile-footer-img-2" src="./img/stackpath.svg" alt="stackpath logo">
+            </span>
         </div>
     </footer>
 </body>
