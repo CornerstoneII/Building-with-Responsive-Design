@@ -1,29 +1,38 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Building-with-Responsive-Design
-This project focuses on reponsiveness to ensure great experience for mobile users. It is a clone of The Next Web site.
 
-Screenshots of our clone website
-./img/screenshot.png
+This project focuses on reponsiveness to ensure great experience for mobile users. This project is based on The Odin Project and Microverse peer programming collaborative coding. You can find the original project specification at: https://www.theodinproject.com/courses/html5-and-css3/lessons/building-with-responsive-design
 
-The project is built using Html and Css with an extensive use of the grid, flexbox, media queries and css properties.
+## Desktop
+![TNW Laptop](./img/screenshot.PNG) 1440px view.
 
-Built With
-HTML
-CSS3
-Font awesome icons
-Live Demo
-https://rawcdn.githack.com/CornerstoneII/Building-with-Responsive-Design/8771132710650b93a42e38dc3a240401c4d26a66/index.html
+## Tablet
+![TNW Tablet](./img/.PNG) 767px view.
 
-To get a local copy up and running follow these simple example steps.
-Setup
-Clone the project locally.
+## Mobile
+![TNW Mobile](./img/384.PNG) 384px view.
 
-Linters
-run npm install.
-run npm run test to check the Html and CSS files.
-Deployment
-Install and run a live server plugin on you IDE/Text editor and run it from the root directory.
+## Built With
 
-Authors
+- HTML5
+- CSS3
+- Google Fonts
+- Font awesome
+
+## Live Demo
+
+[Live Demo Link](https://raw.githack.com/CornerstoneII/Building-with-Responsive-Design/feature/index.html)
+
+## Prerequisites
+Web browser and access to internet
+
+## Getting Started
+
+**To get your own copy of our project clone the repository to your local machine.**
+
+## Authors
+
 👤 **Oluwaseun Iyadi**
 
 - Github: [@CornerstoneII](https://github.com/CornerstoneII)
@@ -35,8 +44,17 @@ Authors
 - Github: [@enkog](https://github.com/enkog)
 - Twitter: [@enkodes](https://twitter.com/enkodes)
 
-Show your support
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the issues page.
+
+## Show your support
 Give a ⭐️ if you like this project!
 
-📝 License
+## Acknowledgments
+Microverse for showing the way for this project to happen
+
+## 📝 License
 This project is MIT licensed.
